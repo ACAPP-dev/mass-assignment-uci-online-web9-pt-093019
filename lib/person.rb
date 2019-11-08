@@ -9,7 +9,7 @@ class Person
   def initialize(arguments)
     arguments.each do |key, value|
       binding.pry
-      #self.send("#{key}:" = value)
+      self.send(("#{key}="), value)
     end
   end
 end
